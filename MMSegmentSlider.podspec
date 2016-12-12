@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors  = { 'Max Medvedev' =>
                  'maxmedvedev@me.com' }
   s.social_media_url = "https://twitter.com/max_medvedev"
-  s.source   = { :git => 'https://github.com/MedvedevMax/MMSegmentSlider.git', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/mynddevelopers/MMSegmentSlider.git', :commit => '4138a2f' }
   s.source_files = 'MMSegmentSlider'
   s.platform = :ios
   s.ios.deployment_target = '7.0'
