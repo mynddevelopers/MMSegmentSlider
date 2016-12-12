@@ -233,7 +233,7 @@ static CGFloat const BottomOffset = 15.0f;
     BOOL canSwitch = index >= 0 && index < self.values.count && index != self.selectedItemIndex;
 
     if (canSwitch) {
-        [self setSelectedItemIndex:index animated:YES];
+        [self setSelectedItemIndex:index animated:NO];
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
 }
