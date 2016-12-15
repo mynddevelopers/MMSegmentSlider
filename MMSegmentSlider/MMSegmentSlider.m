@@ -184,13 +184,13 @@ static CGFloat const BottomOffset = 15.0f;
     CGFloat startPointX = self.bounds.origin.x + self.circlesRadius + HorizontalInsets;
     CGFloat intervalSize = (self.bounds.size.width - (self.circlesRadius + HorizontalInsets) * 2.0) / (self.values.count - 1);
     
-    CGFloat yPos = self.bounds.origin.y + self.bounds.size.height - self.circlesRadius - BottomOffset;
+    CGFloat yPos = self.bounds.origin.y + self.bounds.size.height + self.circlesRadius + BottomOffset;
     
     for (int i = 0; i < self.values.count; i++) {
         UIColor *textColor = self.selectedItemIndex == i ? self.selectedLabelColor : self.labelColor;
         
         [self drawLabel:[self.labels objectAtIndex:i]
-                atPoint:CGPointMake(startPointX + i * intervalSize, yPos - self.circlesRadius - self.textOffset)
+                atPoint:CGPointMake(startPointX + i * intervalSize, yPos + self.circlesRadius + self.textOffset)
               withColor:textColor];
     }
 }
